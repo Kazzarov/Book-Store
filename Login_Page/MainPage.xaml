@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="Login_Page.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Login_Page"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/IMG_4904.jpg"></ImageBrush>
+
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.2*"/>
+            <ColumnDefinition Width ="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.Background>
+                <SolidColorBrush Color="White"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock Text="User Name" FontSize="40" FontStyle="Oblique"
+                           FontWeight="Bold" HorizontalAlignment="Center" FontFamily="Arial"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <TextBlock Text="Password" FontSize="40" FontStyle="Oblique"
+                           FontWeight="Bold" HorizontalAlignment="Center" FontFamily="Arial"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBox x:Name="usernameTbx" Text=" "/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <TextBox x:Name="passTbx" Text=" "/>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Button x:Name="loginBtn" Content ="LogIn" FontSize="30" 
+                        FontWeight="Bold" HorizontalAlignment="Center" Tapped="tap"/>
+            </Grid>
+
+        </Grid>
+
+
+    </Grid>
+</Page>
